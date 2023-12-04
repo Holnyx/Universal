@@ -1,0 +1,131 @@
+.header
+    background-color: #fff
+    top: 0
+    width: 100%
+    position: fixed
+    z-index: 5
+    &__row-first
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-bottom: 1px #D9DADB solid
+
+    &__row-two
+        height: 84px
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__black-menu
+        padding: 18px 0
+        background-color: #262D33
+        display: flex
+.row-first
+    &__menu
+        width: 9.99%
+        height: 100%
+        display: flex
+        align-items: center
+        border-right: 1px #D9DADB solid
+        cursor: pointer
+    &__search
+        // height: 100%
+        width: 64.56%
+        display: flex
+        align-items: center
+        input
+            background-image: url("./img/Search.svg")
+            background-repeat: no-repeat
+            padding-left: 20px
+            width: 733px
+            border: 0
+            font-family: Lato Regular
+            font-size: 14px
+            text-indent: 10px
+            color: #939699
+            outline: none
+    &__subscribe
+        display: flex
+        align-items: flex-end
+        height: 100%
+    &__sign
+        display: flex
+        gap: 10px
+
+.subscribe
+    &__text
+        line-height: 0px
+        padding-left: 10px
+        padding-bottom: 5px
+        h1
+            color: #262D33
+            font-size: 12px
+            font-family: Lato Heavy
+        p
+            font-family: Lato Regular
+            color: #4B5157
+            font-size: 12px
+.menu
+    &__icon-menu
+        cursor: pointer
+        border: 0
+        background: 0
+        padding: 0
+        div
+            width: 20px
+            height: 2px
+            background-color: #BCBFC2
+            margin: 5px 0
+            transition: all .9s
+            &:nth-child(2)
+                width: 13px
+
+    &__name
+        font-size: 14px
+        font-family: Lato Heavy
+        color: #262D33
+        padding-left: 15px
+.row-two
+    &__ny
+        display: flex
+        align-items: center
+        gap: 15px
+        padding-left: 30px
+    &__logo
+        font-family: Roboto Slab Bold
+        font-size: 40px
+        color: #262D33
+    &__temperature
+        display: flex
+        gap: 10px
+        margin-left: -152px
+
+.black-menu
+    &__li
+        padding-left: 0
+        font-family: Lato Heavy
+        text-transform: uppercase
+        list-style-type: none
+        color: #fff
+        font-size: 14px
+        align-items: center
+        justify-items: center
+        display: grid
+        grid-template-columns: repeat(11, auto)
+        grid-column-gap: 46px
+        width: 100%
+        li
+.text
+    color: #4B5157
+    font-family: Lato Regular
+    font-size: 14px
+
+.open1
+    transform: rotate(45deg) translateY(5px) translateX(5px)
+.open2
+    transform: translateX(-10px)
+    opacity: 0
+    transition: all 1s ease
+.open3
+    transform: rotate(-45deg) translateY(-5px) translateX(5px)

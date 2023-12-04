@@ -1,0 +1,820 @@
+.body
+    &__background
+        height: 1560px
+        background: linear-gradient( #262D33 36.74%,#EDEFF0 36.74% 100%)
+        padding-top: 220px
+    &__subscribe
+        height: 245px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 40px
+        font-family: Roboto Slab Bold
+        color: #262D33
+        flex-direction: column
+        p
+            margin-block-start: 0
+    &__plants
+        background-color: #191318
+        height: 270px
+        background-image: url('./img/plants.png')
+        background-repeat: no-repeat
+        background-position: center
+        display: flex
+        font-family: Roboto Slab Bold
+        font-size: 40px
+        color: #fff
+        .plants
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            // opacity: 0
+        p
+            margin-block-start: 0
+
+    &__background-grey2
+        padding-bottom: 60px
+        background-color: #F5F5F5
+    &__background-blue
+        padding-bottom: 60px
+        background-color: #262D33
+
+.subscribe
+    &__button
+        display: flex
+        height: 40px
+        gap: 10px
+        input
+            background-color: transparent
+            border: 1px solid #D9DADB
+            border-radius: 5px
+            width: 313px
+            padding-left: 15px
+.button
+    height: 40px
+    background-color: #4592FF
+    border: none
+    border-radius: 20px
+    width: 119px
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 5px
+    text-decoration: none
+    font-size: 14px
+    color: #fff
+    font-family: Lato Regular
+    font-weight: 800
+    box-sizing: border-box
+
+.news-block
+
+    &__news
+        background-color: #30363D
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        border-radius: 10px
+        align-items: center
+        justify-content: center
+        height: 130px
+        margin-bottom: 30px
+
+.news
+    display: flex
+    align-items: center
+    padding: 0 25px 0 25px
+    font-family: Roboto Slab Bold
+    font-size: 16px
+    color: #fff
+    gap: 27px
+    box-sizing: border-box
+    border-right: 1px solid #4B5157
+    height: 75px
+
+.news:last-child
+    border: none
+.background
+    &__recommendation
+        border-radius: 10px
+        display: grid
+        grid-template-columns: 3fr 0.9fr
+
+.recommendation
+    &__title
+        background-image: url('./img/background-recom.png')
+        background-repeat: no-repeat
+        display: flex
+        border-radius: 10px 0 0 10px
+        flex-direction: column
+        padding: 55px
+    &__container-menu
+        background-color: #fff
+        border-radius: 0 10px 10px 0
+        display: flex
+    &__person
+        display: flex
+        gap: 10px
+        height: 45px
+        width: 176px
+    &__info
+        margin-top: 145px
+
+.container-menu
+    &__menu
+        display: grid
+
+.menu
+    position: relative
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 0 25px
+    border-bottom: 1px solid #D9DADB
+    letter-spacing: 0.5px
+    cursor: pointer
+    &:first-child
+        cursor: auto
+    &:last-child
+        border-bottom: none
+    span:first-child
+        font-size: 14px
+        font-family: Lato Heavy
+        text-transform: uppercase
+        color: #262D33
+    h1
+        margin-top: 0
+        font-size: 12px
+        font-family: Lato Regular
+        text-transform: uppercase
+    span
+        color: #4B5157
+        font-size: 14px
+        font-family: Lato Regular
+.container-menu
+    &__menu
+        & > .menu:hover:not(:first-child)
+            background-color: #F5F5F5
+
+.menu:before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 14px
+    height: 14px
+    transform: rotate(45deg)
+    background-color: #F5F5F5
+    right: 97.5%
+    margin: auto 0
+    display: none
+
+.menu:first-child:before
+    width: 0
+
+.menu:hover:before
+    display: block
+.heart
+    fill: #BCBFC2
+.food
+    color: #3BBDC4
+.cars
+    color: #6E99AE
+.movies
+    color: #AC8EE3
+.nfl
+    color: #FFA34D
+.tech
+    color: #3DC47E
+
+.person
+    &__person
+        display: flex
+        align-items: center
+        gap: 10px
+        span
+            color: #fff
+            flex-direction: column
+.opacity
+    font-family: Lato Regular
+    color: #fff
+    opacity: 0.4
+    font-size: 12px
+.info
+    &__text
+        width: 598px
+        span:first-child
+            font-size: 12px
+            text-transform: uppercase
+            color: #4592FF
+        h1
+            font-family: Roboto Slab Bold
+            font-size: 40px
+            color: #fff
+        span:nth-child(2)
+            color: #fff
+
+.text
+    display: flex
+    flex-wrap: nowrap
+    &__buttons
+        display: flex
+        gap: 30px
+        align-items: center
+    &__button
+        width: 138px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__play
+        display: flex
+        align-items: center
+        gap: 10px
+        span:last-child
+            flex-direction: column
+            color: #fff
+        button
+            display: inline-block
+            background-color: transparent
+            border-radius: 50%
+            align-items: center
+            height: 50px
+            width: 50px
+            border: 2.5px solid rgba(255, 255, 255, 0.3)
+            color: #fff
+            cursor: pointer
+.background-grey
+    &__posts
+        display: grid
+        padding-top: 30px
+        grid-template-columns: repeat(4, 1fr)
+        grid-auto-rows: 170px
+        grid-column-gap: 30px
+        grid-row-gap: 30px
+
+.posts
+
+    &__cars
+        grid-column-start: 1
+        grid-column-end: 3
+        height: 370px
+        background-color: #fff
+        display: flex
+        flex-flow: column
+        background-image: url('./img/cars.png')
+        background-repeat: no-repeat
+        background-position: right
+        cursor: pointer
+        transform: translateX(-50%)
+        opacity: 0
+        transition: all 1s ease
+
+        .top
+            cursor: pointer
+            box-sizing: border-box
+            height: 314px
+            width: 100%
+            padding: 0 35px 0 35px
+            .top-content
+                width: 238px
+                h1
+                    color: #6E99AE
+        h2
+            font-family: Roboto Slab Bold
+        .bottom
+            padding: 0 35px 0 35px
+            box-sizing: border-box
+            display: flex
+            height: 55px
+            width: 100%
+            justify-content: space-between
+            align-items: center
+            img:first-child
+                height: 30px
+            p
+                font-size: 14px
+                font-family: Lato Regular
+                color: #4B5157
+            p:first-child
+                font-size: 14px
+                font-family: Lato Heavy
+                color: #262D33
+            p:last-child
+                color: #939699
+                font-size: 12px
+                font-family: Lato Regular
+
+    &__column
+        height: 770px
+        background-color: #6E99AE
+        // grid-column-start: 4
+        // grid-column-end: 5
+        // grid-row-start: 1
+        // grid-row-end: 4
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 7.66% repeat(3, 1fr) 5.84%
+        // transition: transform .4s ease
+        transform: translateX(100%)
+        opacity: 0
+        transition: all 1s ease
+
+        .column-menu
+            align-items: center
+            justify-content: center
+            display: flex
+            flex-direction: column
+            color: #fff
+            background-image: url('./img/Quote.svg')
+            background-repeat: no-repeat
+            background-position: 10% 17%
+            font-family: Roboto Slab Bold
+            font-size: 20px
+            padding: 0 25px 0 25px
+            &:first-child
+                flex-direction: row
+                border-bottom: 1px solid #B4D1E0
+                background-image: none
+                font-family: Lato Heavy
+                text-transform: uppercase
+                font-size: 14px
+                align-items: center
+                justify-content: start
+            &:last-child
+                background-image: none
+                border-top: 1px solid #B4D1E0
+                font-size: 14px
+                justify-content: center
+                font-family: Lato Heavy
+                align-items: center
+                cursor: pointer
+            .column-socket
+                width: 203px
+                padding: 20px 0 39px 0
+                border-top: 1px solid #B4D1E0
+                .person
+                    font-size: 14px
+                    color: #D1E2EB
+                    font-family: Lato Regular
+                    height: 45px
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    .text-person
+                        display: flex
+                        flex-direction: column
+
+    &__popular
+        height: 370px
+        background-image: url('./img/popular.png')
+        background-repeat: no-repeat
+        padding: 25px
+        box-sizing: border-box
+        color: #fff
+        display: flex
+        flex-direction: column
+        cursor: pointer
+        opacity: 0
+        transition: all 1s ease
+        h1
+            margin-top: 0
+            font-size: 12px
+            font-family: Lato Regular
+            text-transform: uppercase
+        h2
+            font-family: Roboto Slab Bold
+            text-transform: uppercase
+            font-size: 16px
+            letter-spacing: 0.5px
+            line-height: 156.25%
+        .popular
+            padding: 5px 0
+            height: 25px
+            width: 66px
+            background-color: #3DC47E
+            color: #fff
+            font-size: 12px
+            font-family: Lato Heavy
+            border-radius: 3px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0
+            margin-bottom: 117px
+        h1
+            margin: 0
+            color: #E7D9FF
+        .bottom
+            display: flex
+            align-items: center
+            gap: 10px
+            .text
+                font-size: 14px
+                font-family: Lato Regular
+                color: #fff
+                flex-flow: column
+                justify-content: center
+
+                p
+                    display: flex
+                    align-items: center
+                    gap: 10px 5px
+                    margin: 0
+                p:first-child
+                    opacity: 0.85
+                p:last-child
+                    font-size: 12px
+                    opacity: 0.4
+
+    &__cat
+        height: 370px
+        background-image: url('./img/cat.png')
+        background-repeat: no-repeat
+        background-color: #fff
+        cursor: pointer
+        grid-row-start: 3
+        grid-row-end: 5
+        font-size: 16px
+        font-family: Roboto Slab Bold
+        padding: 15px 20px 15px 20px
+        box-sizing: border-box
+        transform: translateX(-100%)
+        opacity: 0
+        transition: all 1s ease
+        div
+            margin-top: 280px
+    &__posts
+        height: 170px
+        background-color: #fff
+        padding: 25px
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        cursor: pointer
+        opacity: 0
+        transition: all 1s ease
+        h1
+            color: #262D33
+            font-family: Roboto Slab Bold
+            font-size: 16px
+            margin-top: 0
+        span
+            font-family: Lato Regular
+            font-size: 14px
+            color: #4B5157
+            line-height: 20px
+        p:last-child
+            font-size: 12px
+            color: #939699
+.bones
+    grid-column-start: 2
+    grid-row-start: 3
+    grid-row-end: 3
+.manufacture
+    grid-column-start: 3
+    grid-row-start: 3
+    grid-row-end: 3
+.world
+    grid-column-start: 2
+    grid-row-start: 4
+    grid-row-end: 4
+
+.lovers
+    grid-column-start: 3
+    grid-row-start: 4
+    grid-row-end: 4
+.border-radius
+    border-radius: 10px
+.background-grey2
+    &__info
+        display: grid
+        grid-template-columns: 3.2fr 1fr
+        grid-column-gap: 29px
+        padding-top: 60px
+
+.info
+    &__news
+        display: flex
+        background-color: #fff
+        opacity: 0
+        transform: translateX(-50%)
+        transition: all 1s ease
+        .news-socket
+            border-bottom: 1px solid #D9DADB
+            h2
+                font-family: Roboto Slab Bold
+                font-size: 20px
+                color: #262D33
+                cursor: pointer
+            .content-news
+                display: flex
+                padding: 24px 0
+                gap: 25px
+                .bookmark
+                    position: absolute
+                    right: 25px
+                    display: grid
+                    input
+                        user-select: none
+                        cursor: pointer
+                        appearance: none
+                        height: 18px
+                        border-radius: 0 2px
+                        border-right: #BCBFC2 solid 7px
+                        border-bottom: solid transparent 5px
+                        outline: none
+                        display: grid
+                    input:before
+                        content: ""
+                        height: 100%
+                        border-left: #BCBFC2 solid 7px
+                        border-radius: 2px 0
+                        border-bottom: solid transparent 5px
+                    input:checked
+                        border-right-color: #EB5757
+                    input:checked:before
+                        border-left-color: #EB5757
+                .news-text
+                    padding-right: 10px
+                    &__date
+                        font-family: Lato Regular
+                        color: #939699
+                        font-size: 12px
+                        display: flex
+                        align-items: center
+                        gap: 10px
+
+            &:last-child
+                border-bottom: none
+    &__column
+        background-color: #fff
+        height: 770px
+        display: grid
+        grid-template-rows: 7.66% repeat(7, 1fr) 5.84%
+        opacity: 0
+        transform: translateX(100%)
+        transition: all 1s ease
+        .column-news
+            position: relative
+            align-items: center
+            justify-content: center
+            display: flex
+            flex-direction: column
+            color: #4B5157
+            font-family: Lato Regular
+            font-size: 14px
+            padding: 0 25px 0 25px
+            border-bottom: none
+            .background
+                position: absolute
+                right: 25px
+                bottom: 10px
+                font-size: 70px
+                font-family: Lato Regular Italic
+                opacity: 0.08
+                color: 262D33
+            &:first-child
+                flex-direction: row
+                border-bottom: 1px solid #D9DADB
+                background-image: none
+                font-family: Lato Heavy
+                text-transform: uppercase
+                align-items: center
+                justify-content: start
+                color: #262D33
+            &:last-child
+                background-image: none
+                border-top: 1px solid #D9DADB
+                justify-content: center
+                font-family: Lato Heavy
+                align-items: center
+                cursor: pointer
+                color: #262D33
+            .column-socket
+                justify-content: center
+                display: flex
+                gap: 10px
+                width: 213px
+                border-bottom: 1px solid #D9DADB
+                padding: 17px 0
+                .text-news
+                    display: flex
+                    flex-direction: column
+                .time
+                    color: #939699
+
+.blue
+    color: #4592FF
+.bluegreen
+    color: #3BBDC4
+.red
+    color: #FF4F52
+.green
+    color: #3BBDC4
+.purple
+    color: #AC8EE3
+._visible
+    transform: translateX(0)
+    transition: all 1s ease
+    opacity: 1
+.background-blue
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 170px
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+    padding-top: 60px
+    .hot
+        height: 570px
+        grid-column-start: 1
+        grid-column-end: 3
+        // grid-template-columns: 100%
+        background-image: url('./img/bg-photos.png')
+        background-repeat: no-repeat
+        box-sizing: border-box
+        padding: 18px
+
+        .hot-button
+            width: 45px
+            padding: 5px 0
+            background-color: #FF4F52
+            color: #fff
+            font-size: 12px
+            font-family: Lato Heavy
+            border-radius: 3px
+            display: flex
+            justify-content: center
+            align-items: center
+        .person
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            font-size: 14px
+            font-family: Lato Regular
+            color: #fff
+            flex-flow: column
+            justify-content: center
+            img
+                margin: 8px 0
+            span:last-child
+                font-size: 12px
+                opacity: 0.4
+                padding-top: 2px
+        .text-hot
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            h1
+                font-family: Roboto Slab Bold
+                font-size: 40px
+                color: #fff
+                text-align: center
+                margin-bottom: 45px
+
+            .button-photos
+                background-color: #4592FF
+                border: none
+                border-radius: 20px
+                width: 185px
+                display: flex
+                align-items: center
+                justify-content: center
+                gap: 10px
+                text-decoration: none
+                font-size: 14px
+                color: #fff
+                font-family: Lato Regular
+                font-weight: 800
+                box-sizing: border-box
+                padding: 10px 0
+                span
+                    color: #C5E4FC
+                    font-family: Lato Regular
+
+    .careers
+        position: relative
+        height: 370px
+        background-color: #fff
+        grid-column-start: 3
+        grid-column-end: 5
+        grid-row-start: 1
+        grid-row-end: 3
+        background-color: #B4D1E0
+        padding-left: 35px
+
+        .info-careers
+            width: 243px
+            margin-top: 35px
+            margin-bottom: 25px
+            h1:first-child
+                margin-top: 0
+                font-size: 12px
+                font-family: Lato Regular
+                text-transform: uppercase
+                color: #6E99AE
+                letter-spacing: 0.5px
+            h1
+                font-family: Roboto Slab Bold
+                font-size: 25px
+                color: #262D33
+            span
+                font-family: Lato Regular
+                color: #4B5157
+                font-size: 14px
+                width: 213px
+                display: flex
+        .photo-circle
+
+            img
+                position: absolute
+                top: 18px
+                left: 250px
+                z-index: 2
+            .circle
+                background-color: #D1E2EB
+                width: 260px
+                height: 260px
+                border-radius: 50%
+                position: absolute
+                right: 30px
+                bottom: 45px
+                display: block
+
+    .manufactur
+        grid-column-start: 4
+        grid-column-end: 5
+        grid-row-start: 3
+        grid-row-end: 4
+        height: 170px
+        background-color: #fff
+        padding: 25px
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        cursor: pointer
+
+        h1
+            color: #262D33
+            font-family: Roboto Slab Bold
+            font-size: 16px
+            margin-top: 0
+        span
+            font-family: Lato Regular
+            font-size: 14px
+            color: #4B5157
+            line-height: 20px
+        p:last-child
+            font-size: 12px
+            color: #939699
+    .bone
+        grid-column-start: 3
+        grid-column-end: 4
+        grid-row-start: 3
+        grid-row-end: 4
+        height: 170px
+        background-color: #fff
+        padding: 25px
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        cursor: pointer
+
+        h1
+            color: #262D33
+            font-family: Roboto Slab Bold
+            font-size: 16px
+            margin-top: 0
+        span
+            font-family: Lato Regular
+            font-size: 14px
+            color: #4B5157
+            line-height: 20px
+        p:last-child
+            font-size: 12px
+            color: #939699
+.careers
+    opacity: 0
+    transform: translateX(50%)
+    transition: all 1s ease
+.hot
+    opacity: 0
+    transform: translateX(-50%)
+    transition: all 1s ease
+.manufactur
+    opacity: 0
+    transition: all 1s ease
+    transform: translateX(50%)
+.bone
+    opacity: 0
+    transition: all 1s ease
+    transform: translateX(50%)
+._visible
+    transform: translateX(0)
+    transition: all 1s ease
+    opacity: 1
